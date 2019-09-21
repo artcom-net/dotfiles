@@ -42,6 +42,6 @@ Plugin 'klen/python-mode'	        " Python mode (docs, refactor, lints, highligh
 
 call vundle#end()            		" required
 "autocmd VimEnter * NERDTree
-"let NERDTreeShowHidden=1
+let NERDTreeShowHidden=1
 " mapping
 map <F3> :NERDTreeToggle<CR>
