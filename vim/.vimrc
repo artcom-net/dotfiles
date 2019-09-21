@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdtree' 	    	" Project and file navigation
 
 "------------------=== Other ===----------------------
 Plugin 'bling/vim-airline'   	    	" Lean & mean status/tabline for vim
+Plugin 'editorconfig/editorconfig-vim'
 "Plugin 'fisadev/FixedTaskList.vim'  	" Pending tasks list
 "Plugin 'rosenfeld/conque-term'      	" Consoles as buffers
 "Plugin 'tpope/vim-surround'	   	" Parentheses, brackets, quotes, XML tags, and more
