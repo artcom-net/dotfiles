@@ -21,7 +21,7 @@ logging.basicConfig(
 
 def parse_config(config_path):
     logging.debug(f'Parse config: {config_path}')
-    conf_parser = ConfigParser(allow_no_value=True)
+    conf_parser = ConfigParser(allow_no_value=True, delimiters=('=',))
     conf_parser.optionxform = str
     with open(config_path, 'r') as config:
         conf_parser.read_file(config)
