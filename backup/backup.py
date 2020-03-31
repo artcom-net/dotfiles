@@ -9,17 +9,14 @@ from pathlib import Path
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--config', required=True)
-parser.add_argument('-l', '--log-file')
 parser.add_argument('--log-level', choices=('INFO', 'DEBUG'), default='INFO')
 args = parser.parse_args()
 
-if args.log_file:
-    logging.basicConfig(
-        filename=args.log_file,
-        level=getattr(logging, args.log_level),
-        format='%(asctime)s %(levelname)s %(message)s',
-        datefmt='%d.%m.%Y %H:%M:%S'
-    )
+logging.basicConfig(
+    level=getattr(logging, args.log_level),
+    format='%(asctime)s %(levelname)s %(message)s',
+    datefmt='%d.%m.%Y %H:%M:%S'
+)
 
 
 def parse_config(config_path):
